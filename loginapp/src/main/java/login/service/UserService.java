@@ -1,10 +1,9 @@
 package login.service;
 
-import login.model.User;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import login.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
-import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -17,8 +16,12 @@ public class UserService implements UserDetailsService {
 	private UserRepository userRepository;
 
     @Override
+    @HystrixCommand(fallbackMethod = "reliable")
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         return userRepository.findOneByUsername(username);
     }
 
+    public UserDetails reliable(String username) {
+        return userRepository.findOneByUsername(username, true);
+    }
 }
