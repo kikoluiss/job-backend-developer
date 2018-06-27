@@ -1,5 +1,7 @@
 package login.config;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,6 +10,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
@@ -32,11 +35,13 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 @EnableSwagger2
 public class SwaggerConfiguration {
-   
-	private static final String CLIENT_ID = "my-trusted-client";
+
+    @Value("${server.port}")
+    private String serverPort;
+
+    private static final String CLIENT_ID = "my-trusted-client";
     private static final String SECRET = "123456";
-	private static final String AUTH_SERVER = "http://localhost:8080";
-	
+
 	@Bean
 	public Docket swaggerSpringMvcPlugin() {
 		Set<String> protocolos = new HashSet<String>();
@@ -76,8 +81,15 @@ public class SwaggerConfiguration {
        authorizationScopeList.add(new AuthorizationScope("trust", "trust all"));
        authorizationScopeList.add(new AuthorizationScope("write", "access all"));
 
+       String hostName = "";
+       try {
+           hostName = InetAddress.getLocalHost().getHostAddress();
+       } catch (UnknownHostException e) {
+           e.printStackTrace();
+       }
+
        List<GrantType> grantTypes = new ArrayList<>();
-       GrantType creGrant = new ResourceOwnerPasswordCredentialsGrant(AUTH_SERVER + "/oauth/token");
+       GrantType creGrant = new ResourceOwnerPasswordCredentialsGrant("http://" + hostName + ":" + serverPort + "/oauth/token");
 
        grantTypes.add(creGrant);
 

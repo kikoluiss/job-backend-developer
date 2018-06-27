@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.security.core.GrantedAuthority;
@@ -32,10 +33,18 @@ public class User implements UserDetails {
 		return password;
 	}
 
+	public void setPassword(String password) {
+	    this.password = password;
+    }
+
 	@Override
 	public String getUsername() {
 		return username;
 	}
+
+	public void setUsername(String username) {
+	    this.username = username;
+    }
 
 	@Override
 	public boolean isAccountNonExpired() {
@@ -57,4 +66,7 @@ public class User implements UserDetails {
 		return enabled;
 	}
 
+	public void setEnabled(Boolean enabled) {
+	    this.enabled = enabled;
+    }
 }
