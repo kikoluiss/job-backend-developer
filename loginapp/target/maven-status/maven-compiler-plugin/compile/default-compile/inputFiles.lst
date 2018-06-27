@@ -1,0 +1,10 @@
+/Users/kiko/Development/projects/job-backend-developer/loginapp/src/main/java/login/config/OAuth2SecurityConfiguration.java
+/Users/kiko/Development/projects/job-backend-developer/loginapp/src/main/java/login/config/AuthorizationServerConfiguration.java
+/Users/kiko/Development/projects/job-backend-developer/loginapp/src/main/java/login/config/CacheConfiguration.java
+/Users/kiko/Development/projects/job-backend-developer/loginapp/src/main/java/login/repository/UserRepository.java
+/Users/kiko/Development/projects/job-backend-developer/loginapp/src/main/java/login/service/UserService.java
+/Users/kiko/Development/projects/job-backend-developer/loginapp/src/main/java/login/LoginApplication.java
+/Users/kiko/Development/projects/job-backend-developer/loginapp/src/main/java/login/config/SwaggerConfiguration.java
+/Users/kiko/Development/projects/job-backend-developer/loginapp/src/main/java/login/model/User.java
+/Users/kiko/Development/projects/job-backend-developer/loginapp/src/main/java/login/endpoits/Home.java
+/Users/kiko/Development/projects/job-backend-developer/loginapp/src/main/java/login/config/CorsFilter.java

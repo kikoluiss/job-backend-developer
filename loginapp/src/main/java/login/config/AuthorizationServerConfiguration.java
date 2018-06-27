@@ -49,12 +49,19 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
 		return new JwtTokenStore(accessTokenConverter());
 	}
 
+//	@Bean
+//	public JwtAccessTokenConverter accessTokenConverter() {
+//		JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
+//		KeyStoreKeyFactory keyStoreKeyFactory =
+//				new KeyStoreKeyFactory(new ClassPathResource("mytest.jks"), "mypass".toCharArray());
+//		converter.setKeyPair(keyStoreKeyFactory.getKeyPair("mytest"));
+//		return converter;
+//	}
+
 	@Bean
 	public JwtAccessTokenConverter accessTokenConverter() {
 		JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
-		KeyStoreKeyFactory keyStoreKeyFactory =
-				new KeyStoreKeyFactory(new ClassPathResource("mytest.jks"), "mypass".toCharArray());
-		converter.setKeyPair(keyStoreKeyFactory.getKeyPair("mytest"));
+		converter.setSigningKey("123");
 		return converter;
 	}
 
