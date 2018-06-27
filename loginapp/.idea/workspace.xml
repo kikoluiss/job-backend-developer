@@ -2,37 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3db4f95a-7795-475e-9669-7d99b3c2cbb3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/login/LoginApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/login/config/AuthorizationServerConfiguration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/login/config/CacheConfiguration$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/login/config/CacheConfiguration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/login/config/CorsFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/login/config/OAuth2SecurityConfiguration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/login/config/SwaggerConfiguration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/login/endpoits/Home.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/login/model/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/login/repository/UserRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/login/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/docker/image-id" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/docker/image-name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/docker/repository" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/docker/tag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/loginapp-1.0-SNAPSHOT-docker-info.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/loginapp-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/loginapp-1.0-SNAPSHOT.jar.original" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/META-INF/docker/local.kikoluiss/loginapp/image-id" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/META-INF/docker/local.kikoluiss/loginapp/image-name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/META-INF/docker/local.kikoluiss/loginapp/repository" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/META-INF/docker/local.kikoluiss/loginapp/tag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/login/config/AuthorizationServerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/login/config/AuthorizationServerConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mytest.jks" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mytest.jks" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,35 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            <state relative-caret-position="240">
+              <caret line="16" column="21" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="16" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthorizationServerConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/login/config/AuthorizationServerConfiguration.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OAuth2SecurityConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/login/config/OAuth2SecurityConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="465">
+              <caret line="114" selection-start-line="103" selection-end-line="114" />
             </state>
           </provider>
         </entry>
@@ -120,9 +76,9 @@
         <option value="$PROJECT_DIR$/src/main/java/login/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/login/config/SpringMongoConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/login/LoginApplication.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/login/config/AuthorizationServerConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -538,13 +494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/login/config/OAuth2SecurityConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -567,8 +516,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        <state relative-caret-position="240">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="114" selection-start-line="103" selection-end-line="114" />
         </state>
       </provider>
     </entry>
