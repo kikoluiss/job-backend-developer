@@ -1,0 +1,37 @@
+
+kind: Deployment
+apiVersion: extensions/v1beta1
+metadata:
+  name: loginapp
+  labels:
+    run: loginapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: loginapp
+  template:
+    metadata:
+      labels:
+        run: loginapp
+    spec:
+      containers:
+      - name: loginapp
+        image: kikoluiss/loginapp:latest
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        env:
+        - name: SERVER_PORT
+          value: "8080"
+        - name: MONGODB_HOST
+          value: "10.98.216.155"
+        - name: MONGODB_PORT
+          value: "27017"
+        - name: MONGODB_DATABASE
+          value: "loginapp"
+        - name: REDIS_HOST
+          value: "10.106.30.173"
+        - name: REDIS_PORT
+          value: "6379"
+

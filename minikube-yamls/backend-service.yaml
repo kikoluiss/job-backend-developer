@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: loginapp
+  labels:
+    run: loginapp
+spec:
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080
+  selector:
+    run: loginapp
+  type: NodePort
+
