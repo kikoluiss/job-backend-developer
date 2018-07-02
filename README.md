@@ -74,7 +74,7 @@ Para criar uma instância do Redis no cluster do Kubernetes, basta executar os r
 
 A ordem de execução também é importante, pois existem dependências que podem gerar erros:
 ```shell
-kubectl create -f redis-master-deployment.yaml`
+kubectl create -f redis-master-deployment.yaml
 kubectl create -f redis-slave-deployment.yaml
 kubectl create -f redis-master-service.yaml
 kubectl create -f redis-slave-service.yaml
